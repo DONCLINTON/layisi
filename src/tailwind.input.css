@@ -1,0 +1,5 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* Sentinel: pages check this to know the compiled stylesheet loaded, else fall back to the CDN. */
+:root { --tw-built: 1; }
