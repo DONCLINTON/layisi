@@ -1,9 +1,3 @@
-# Dedicated standalone directory pages.
-/brokerage/  /brokerage.html  200
-/brokerage   /brokerage.html  200
-/jobs/       /jobs/index.html 200
-/jobs        /jobs/index.html 200
-
-# Job detail URLs are handled by the jobs page's client-side routing.
-# Root and nested index.html files are served by Cloudflare Static Assets;
-# no catch-all rewrite is needed (it can loop with clean-URL handling).
+# Layisi canonical page URLs
+/jobs  /jobs/  301
+/brokerage/  /brokerage  301
