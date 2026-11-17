@@ -1,10 +1,9 @@
-# Dedicated standalone directory pages must be served before the SPA fallback.
+# Dedicated standalone directory pages.
 /brokerage/  /brokerage.html  200
 /brokerage   /brokerage.html  200
 /jobs/       /jobs/index.html 200
 /jobs        /jobs/index.html 200
-/jobs/:id/*  /jobs/index.html 200
-/jobs/:id    /jobs/index.html 200
 
-# Individual job pages open inside the standalone jobs page; product routes continue through the marketplace app.
-/*           /index.html      200
+# Job detail URLs are handled by the jobs page's client-side routing.
+# Root and nested index.html files are served by Cloudflare Static Assets;
+# no catch-all rewrite is needed (it can loop with clean-URL handling).
