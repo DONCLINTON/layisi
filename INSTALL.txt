@@ -1,0 +1,13 @@
+LAYISI CLOUDFLARE REDIRECT FIX
+
+Only replace the existing _redirects file in the ROOT of the GitHub repository with the included _redirects file.
+
+Do not put it inside a subfolder. Keep the filename exactly _redirects (no .txt extension).
+
+The rules explicitly map:
+- /brokerage/ and /brokerage to /brokerage.html
+- /jobs/ and /jobs to /jobs/index.html
+
+No catch-all clean-URL rewrite is included because Cloudflare Static Assets already handles index.html clean URLs. A catch-all rewrite can cause the infinite-loop error reported in the deployment log.
+
+After committing the replacement, trigger a new Cloudflare deployment. No other project files need to be changed for the specific error shown in the log.
