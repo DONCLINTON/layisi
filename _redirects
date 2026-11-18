@@ -1,12 +1,3 @@
-# Brokerage standalone page
-/brokerage/  /brokerage.html  200
-
-# Jobs standalone page
-/jobs/  /jobs/index.html  200
-/jobs    /jobs/index.html  200
-
-# Individual job detail URLs
+# Individual job detail routes
 /jobs/:id/*  /jobs/  200
 /jobs/:id    /jobs/  200
-
-# Marketplace SPA fallback
