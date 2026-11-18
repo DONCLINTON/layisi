@@ -10,4 +10,3 @@
 /jobs/:id    /jobs/  200
 
 # Marketplace SPA fallback
-/*  /index.html  200
