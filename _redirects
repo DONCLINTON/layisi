@@ -1,10 +1,13 @@
-# Dedicated standalone directory pages must be served before the SPA fallback.
+# Brokerage standalone page
 /brokerage/  /brokerage.html  200
-/brokerage   /brokerage.html  200
-/jobs/       /jobs/index.html 200
-/jobs        /jobs/index.html 200
-/jobs/:id/*  /jobs/index.html 200
-/jobs/:id    /jobs/index.html 200
 
-# Individual job pages open inside the standalone jobs page; product routes continue through the marketplace app.
-/*           /index.html      200
+# Jobs standalone page
+/jobs/  /jobs/index.html  200
+/jobs    /jobs/index.html  200
+
+# Individual job detail URLs
+/jobs/:id/*  /jobs/  200
+/jobs/:id    /jobs/  200
+
+# Marketplace SPA fallback
+/*  /index.html  200
