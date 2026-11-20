@@ -95,5 +95,10 @@ $('closeJobModal').addEventListener('click',()=>closeModal('jobModal'));$('close
 $('jobGrid').addEventListener('click',e=>{const a=e.target.closest('a[data-job]');if(!a||e.metaKey||e.ctrlKey||e.shiftKey)return;e.preventDefault();const job=allJobs.find(j=>String(j.id)===a.dataset.job);if(job){history.pushState({},'',a.getAttribute('href'));openJob(job);}});
 window.addEventListener('popstate',()=>{if(!/^\/jobs\/[^/]+/.test(location.pathname)){['jobModal','applyModal'].forEach(id=>{$(id).classList.add('hidden');$(id).classList.remove('flex');});document.body.classList.remove('modal-open');}});
 loadJobs().then(()=>{const m=location.pathname.match(/^\/jobs\/([^/]+)/);if(m){const job=allJobs.find(j=>String(j.id)===decodeURIComponent(m[1]));if(job)openJob(job);}});
-})();</script><script>if('serviceWorker'in navigator){window.addEventListener('load',()=>{navigator.serviceWorker.register('/service-worker.js').catch(()=>{});});}</script><script src="/counts.js" defer></script></body>
+})();</script><nav aria-label="Legal and information" style="text-align:center;padding:20px 10px;font-size:13px;line-height:2;background:#0b1020;color:#cbd5e1">
+<a href="/about.html" style="color:inherit">About</a> ·
+<a href="/contact.html" style="color:inherit">Contact</a> ·
+<a href="/privacy.html" style="color:inherit">Privacy Policy</a> ·
+<a href="/terms.html" style="color:inherit">Terms & Conditions</a>
+  </nav><script>if('serviceWorker'in navigator){window.addEventListener('load',()=>{navigator.serviceWorker.register('/service-worker.js').catch(()=>{});});}</script><script src="/counts.js" defer></script></body>
 </html>
