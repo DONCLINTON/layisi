@@ -24,6 +24,20 @@ xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 
 </url>
 <url>
+<loc>https://layisi.shop/about.html</loc>
+<lastmod>2026-11-20</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+
+</url>
+<url>
+<loc>https://layisi.shop/contact.html</loc>
+<lastmod>2026-11-20</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+
+</url>
+<url>
 <loc>https://layisi.shop/privacy.html</loc>
 <lastmod>2026-11-20</lastmod>
 <changefreq>daily</changefreq>
