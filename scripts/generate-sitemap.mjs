@@ -1,3 +1,4 @@
+
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -168,12 +169,22 @@ h1{font-size:clamp(24px,5vw,36px);line-height:1.2}
 .contact{background:#16a34a;color:white}
 .back{color:#047857;font-weight:800;text-decoration:none}
 footer{padding:24px;text-align:center;color:#64748b;font-size:13px}
+footer nav{margin-top:10px;line-height:2}
+footer a{color:#475569;text-decoration:none;margin:0 5px}
+footer a:hover{text-decoration:underline;color:#047857}
 </style>
 </head>
 <body>
 <header><a class="brand" href="/"><span>LAY</span><span>ISI</span></a></header>
 <main>${content}</main>
-<footer>Layisi Uganda · Marketplace, Jobs and Rentals</footer>
+<footer>
+<p>Layisi Uganda · Marketplace, Jobs and Rentals</p>
+<nav aria-label="Legal information">
+<a href="/privacy.html">Privacy Policy</a> ·
+<a href="/terms.html">Terms & Conditions</a>
+</nav>
+<p><a href="/">Back to Layisi</a></p>
+</footer>
 </body>
 </html>`;
 }
@@ -199,6 +210,8 @@ function jsonLd(data) {
 addUrl('/', '1.0');
 addUrl('/jobs/', '0.9');
 addUrl('/brokerage/', '0.9');
+addUrl('/privacy.html', '0.5');
+addUrl('/terms.html', '0.5');
 
 let listingCount = 0;
 let jobCount = 0;
