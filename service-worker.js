@@ -1,5 +1,5 @@
-const CACHE_NAME = "layisi-cache-v15";
-const urlsToCache = ["/", "/index.html", "/icon_192.png", "/Icon_512.png", "/favicon.ico", "/favicon.svg", "/apple-touch-icon.png", "/no-image.svg", "/splash.png", "/counts.js", "/manifest.json", "/brokerage.html", "/brokerage/", "/jobs/", "/jobs/index.html"];
+const CACHE_NAME = "layisi-cache-v16";
+const urlsToCache = ["/", "/index.html", "/icon_192.png", "/Icon_512.png", "/favicon.ico", "/favicon.svg", "/apple-touch-icon.png", "/no-image.svg", "/splash.png", "/counts.js", "/manifest.json", "/brokerage/", "/jobs/", "/jobs/index.html"];
 self.addEventListener("install", event => {
 event.waitUntil(caches.open(CACHE_NAME).then(cache => cache.addAll(urlsToCache)));
 self.skipWaiting();

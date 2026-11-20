@@ -8,8 +8,8 @@ PROJECT STRUCTURE
 -----------------
 - index.html: main Layisi marketplace.
 - jobs/index.html: independent, standalone Jobs page. Keep this file in /jobs/.
-- brokerage.html: standalone property and rentals page.
-- _redirects: routes /jobs/ and /brokerage/ to their dedicated pages and sends other app routes to index.html.
+- brokerage/index.html: standalone property and rentals page.
+- _redirects: intentionally has no rewrite rules (they cause redirect loops on Cloudflare).
 - manifest.json and service-worker.js: PWA configuration.
 - sitemap.xml and robots.txt: search-engine discovery.
 - scripts/generate-sitemap.mjs: refreshes product, job and rental SEO URLs.

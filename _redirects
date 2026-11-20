@@ -1,3 +1,2 @@
-# Individual job detail routes
-/jobs/:id/*  /jobs/  200
-/jobs/:id    /jobs/  200
+# No rewrite rules needed: /jobs/, /brokerage/, /product/<id>/<slug>/ and /jobs/<id>/<slug>/ are real folders with their own index.html.
+# Do not add "/* /index.html 200" or rewrites to .html files: they make Cloudflare loop ("too many redirects").

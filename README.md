@@ -5,7 +5,7 @@ Layisi is a static HTML/CSS/JavaScript marketplace connected to Supabase and dep
 ## Main pages
 - Marketplace: `/`
 - Independent Jobs page: `/jobs/` (served from `jobs/index.html`)
-- Brokerage and rentals: `/brokerage/` (served from `brokerage.html`)
+- Brokerage and rentals: `/brokerage/` (served from `brokerage/index.html`)
 
 The Jobs page is a separate standalone page. Keep `jobs/index.html` in its directory; do not merge it into `index.html`.
 
