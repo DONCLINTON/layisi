@@ -180,6 +180,8 @@ footer a:hover{text-decoration:underline;color:#047857}
 <footer>
 <p>Layisi Uganda · Marketplace, Jobs and Rentals</p>
 <nav aria-label="Legal information">
+<a href="/about.html">About</a> ·
+<a href="/contact.html">Contact</a> ·
 <a href="/privacy.html">Privacy Policy</a> ·
 <a href="/terms.html">Terms & Conditions</a>
 </nav>
@@ -210,6 +212,8 @@ function jsonLd(data) {
 addUrl('/', '1.0');
 addUrl('/jobs/', '0.9');
 addUrl('/brokerage/', '0.9');
+addUrl('/about.html', '0.5');
+addUrl('/contact.html', '0.5');
 addUrl('/privacy.html', '0.5');
 addUrl('/terms.html', '0.5');
 
