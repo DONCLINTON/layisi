@@ -26,7 +26,7 @@ jobs:
         run: node scripts/generate-sitemap.mjs
       - name: Commit updated SEO files
         run: |
-          git add sitemap.xml rentals/
+          git add sitemap.xml rentals/ product/ jobs/ listings/
           if git diff --cached --quiet; then
             echo "SEO files are already up to date."
             exit 0
