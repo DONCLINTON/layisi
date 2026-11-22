@@ -52,6 +52,13 @@ xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 
 </url>
 <url>
+<loc>https://layisi.shop/product/85/sandles/</loc>
+<lastmod>2026-11-22</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.8</priority>
+<image:image><image:loc>https://lulijpkeslesdeyemada.supabase.co/storage/v1/object/public/item-photos/1795348146178_0_1001911500.jpg</image:loc></image:image>
+</url>
+<url>
 <loc>https://layisi.shop/product/84/plot/</loc>
 <lastmod>2026-11-22</lastmod>
 <changefreq>daily</changefreq>
@@ -617,6 +624,13 @@ xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 <changefreq>daily</changefreq>
 <priority>0.8</priority>
 
+</url>
+<url>
+<loc>https://layisi.shop/rentals/3/double-room-in-kansanga-kitalanga/</loc>
+<lastmod>2026-11-22</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.8</priority>
+<image:image><image:loc>https://lulijpkeslesdeyemada.supabase.co/storage/v1/object/public/rental-photos/1795337740391_0_1001911131.jpg</image:loc></image:image>
 </url>
 <url>
 <loc>https://layisi.shop/rentals/2/single-self-contained-in-mutungo/</loc>
