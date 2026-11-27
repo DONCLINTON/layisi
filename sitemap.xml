@@ -640,13 +640,6 @@ xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 
 </url>
 <url>
-<loc>https://layisi.shop/jobs/30/supermarket-attendants/</loc>
-<lastmod>2026-11-27</lastmod>
-<changefreq>daily</changefreq>
-<priority>0.8</priority>
-
-</url>
-<url>
 <loc>https://layisi.shop/jobs/29/software-developer/</loc>
 <lastmod>2026-11-27</lastmod>
 <changefreq>daily</changefreq>
@@ -682,11 +675,11 @@ xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 
 </url>
 <url>
-<loc>https://layisi.shop/jobs/1/painter/</loc>
+<loc>https://layisi.shop/rentals/4/apartment-in-namugongo/</loc>
 <lastmod>2026-11-27</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.8</priority>
-
+<image:image><image:loc>https://lulijpkeslesdeyemada.supabase.co/storage/v1/object/public/rental-photos/1795774527929_0_1001924037.jpg</image:loc></image:image>
 </url>
 <url>
 <loc>https://layisi.shop/rentals/3/double-room-in-kansanga-kitalanga/</loc>
